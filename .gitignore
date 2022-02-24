@@ -1,6 +1,4 @@
 *.csproj.user
-*.sln
-*.csproj
 AntiWordle/bin/
 AntiWordle/obj/
 .vs/
