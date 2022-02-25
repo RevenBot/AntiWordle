@@ -56,7 +56,7 @@ namespace AntiWordle
             EscludiGialle();
 
             }
-            foreach (var carV in LetteraTrovataG)
+            foreach (var carV in ParolaTrovataV)
             {
                 if (carV != '\0')
                 {

@@ -10,178 +10,233 @@ namespace AntiWordle
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //prima riga
+            bottone1.Riga = 0;
+            bottone2.Riga = 0;
+            bottone3.Riga = 0;
+            bottone4.Riga = 0;
+            bottone5.Riga = 0;
+            //Seconda riga
+            bottone6.Riga = 1;
+            bottone7.Riga = 1;
+            bottone8.Riga = 1;
+            bottone9.Riga = 1;
+            bottone10.Riga = 1;
+            //Terza riga
+            bottone11.Riga = 2;
+            bottone12.Riga = 2;
+            bottone13.Riga = 2;
+            bottone14.Riga = 2;
+            bottone15.Riga = 2;
+            //Quarta riga 
+            bottone16.Riga = 3;
+            bottone17.Riga = 3;
+            bottone18.Riga = 3;
+            bottone19.Riga = 3;
+            bottone20.Riga = 3;
+            //Quinta riga
+            bottone21.Riga = 4;
+            bottone22.Riga = 4;
+            bottone23.Riga = 4;
+            bottone24.Riga = 4;
+            bottone25.Riga = 4;
+            //Quinta riga
+            bottone26.Riga = 5;
+            bottone27.Riga = 5;
+            bottone28.Riga = 5;
+            bottone29.Riga = 5;
+            bottone30.Riga = 5;
+            //1 colonna
+            bottone1.Colonna = 0;
+            bottone6.Colonna = 0;
+            bottone11.Colonna = 0;
+            bottone16.Colonna = 0;
+            bottone21.Colonna = 0;
+            bottone26.Colonna = 0;
+            //2 colonna
+            bottone2.Colonna = 1;
+            bottone7.Colonna = 1;
+            bottone12.Colonna = 1;
+            bottone17.Colonna = 1;
+            bottone22.Colonna = 1;
+            bottone27.Colonna = 1;
+            //3 colonna
+            bottone3.Colonna = 2;
+            bottone8.Colonna = 2;
+            bottone13.Colonna = 2;
+            bottone18.Colonna = 2;
+            bottone23.Colonna = 2;
+            bottone28.Colonna = 2;
+            //4 colonna
+            bottone4.Colonna = 3;
+            bottone9.Colonna = 3;
+            bottone14.Colonna = 3;
+            bottone19.Colonna = 3;
+            bottone24.Colonna = 3;
+            bottone23.Colonna = 3;
+            //5 colonna
+            bottone5.Colonna = 4;
+            bottone10.Colonna = 4;
+            bottone15.Colonna = 4;
+            bottone20.Colonna = 4;
+            bottone25.Colonna = 4;
+            bottone30.Colonna = 4;
 
+            //caricamento
+            ricerca.LettoreFile();
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text.Length);
-            listBox1.Items.Add(textBox1.Text);
             if (numeroRiga == 0 & textBox1.Text.Length == 5)
             {
-                button0_0.Text = textBox1.Text[0].ToString();
-                button0_1.Text = textBox1.Text[1].ToString();
-                button0_2.Text = textBox1.Text[2].ToString();
-                button0_3.Text = textBox1.Text[3].ToString();
-                button0_4.Text = textBox1.Text[4].ToString();
+                bottone1.Text = textBox1.Text[0].ToString();
+                bottone2.Text = textBox1.Text[1].ToString();
+                bottone3.Text = textBox1.Text[2].ToString();
+                bottone4.Text = textBox1.Text[3].ToString();
+                bottone5.Text = textBox1.Text[4].ToString();
                 //numeroRiga++;
             }
             if (numeroRiga == 1 & textBox1.Text.Length == 5)
             {
-                button1_0.Text = textBox1.Text[0].ToString();
-                button1_1.Text = textBox1.Text[1].ToString();
-                button1_2.Text = textBox1.Text[2].ToString();
-                button1_3.Text = textBox1.Text[3].ToString();
-                button1_4.Text = textBox1.Text[4].ToString();
+                bottone6.Text = textBox1.Text[0].ToString();
+                bottone7.Text = textBox1.Text[1].ToString();
+                bottone8.Text = textBox1.Text[2].ToString();
+                bottone9.Text = textBox1.Text[3].ToString();
+                bottone10.Text = textBox1.Text[4].ToString();
             }
             if (numeroRiga == 2 & textBox1.Text.Length == 5)
             {
-                button2_0.Text = textBox1.Text[0].ToString();
-                button2_1.Text = textBox1.Text[1].ToString();
-                button2_2.Text = textBox1.Text[2].ToString();
-                button2_3.Text = textBox1.Text[3].ToString();
-                button2_4.Text = textBox1.Text[4].ToString();
+                bottone11.Text = textBox1.Text[0].ToString();
+                bottone12.Text = textBox1.Text[1].ToString();
+                bottone13.Text = textBox1.Text[2].ToString();
+                bottone14.Text = textBox1.Text[3].ToString();
+                bottone15.Text = textBox1.Text[4].ToString();
             }
             if (numeroRiga == 3 & textBox1.Text.Length == 5)
             {
-                button3_0.Text = textBox1.Text[0].ToString();
-                button3_1.Text = textBox1.Text[1].ToString();
-                button3_2.Text = textBox1.Text[2].ToString();
-                button3_3.Text = textBox1.Text[3].ToString();
-                button3_4.Text = textBox1.Text[4].ToString();
+                bottone16.Text = textBox1.Text[0].ToString();
+                bottone17.Text = textBox1.Text[1].ToString();
+                bottone18.Text = textBox1.Text[2].ToString();
+                bottone19.Text = textBox1.Text[3].ToString();
+                bottone20.Text = textBox1.Text[4].ToString();
             }
             if (numeroRiga == 4 & textBox1.Text.Length == 5)
             {
-                button4_0.Text = textBox1.Text[0].ToString();
-                button4_1.Text = textBox1.Text[1].ToString();
-                button4_2.Text = textBox1.Text[2].ToString();
-                button4_3.Text = textBox1.Text[3].ToString();
-                button4_4.Text = textBox1.Text[4].ToString();
+                bottone21.Text = textBox1.Text[0].ToString();
+                bottone22.Text = textBox1.Text[1].ToString();
+                bottone23.Text = textBox1.Text[2].ToString();
+                bottone24.Text = textBox1.Text[3].ToString();
+                bottone25.Text = textBox1.Text[4].ToString();
             }
             if (numeroRiga == 5 & textBox1.Text.Length == 5)
             {
-                button5_0.Text = textBox1.Text[0].ToString();
-                button5_1.Text = textBox1.Text[1].ToString();
-                button5_2.Text = textBox1.Text[2].ToString();
-                button5_3.Text = textBox1.Text[3].ToString();
-                button5_4.Text = textBox1.Text[4].ToString();
-            }
-
-        }
-
-        private void ClickButton(object sender, EventArgs e)
-        {
-            if (sender is Button b)
-            {
-                if (b.BackColor != Color.Orange)
-                {
-                    b.BackColor = Color.Orange;
-                }
-                else
-                {
-                    b.BackColor = Color.Red;
-                }
+                bottone26.Text = textBox1.Text[0].ToString();
+                bottone27.Text = textBox1.Text[1].ToString();
+                bottone28.Text = textBox1.Text[2].ToString();
+                bottone29.Text = textBox1.Text[3].ToString();
+                bottone30.Text = textBox1.Text[4].ToString();
             }
         }
+
+        
 
         private void ClickCheckBox(object sender, EventArgs e)
         {
-            if (sender is CheckBox cB)
+            foreach (var bottone in this.Controls.OfType<Bottone>())
             {
-                if (cB.Checked)
+                if(sender is CheckBox cB)
                 {
-                    cB.BackColor = Color.Green;
-                    switch (cB.Name)
+                    if (cB.Checked & cB.Name.Equals("letteraVerdeAt0"))
                     {
-                        case "letteraVerdeAt0":
-                            button0_0.BackColor = Color.Green;
-                            button1_0.BackColor = Color.Green;
-                            button2_0.BackColor = Color.Green;
-                            button3_0.BackColor = Color.Green;
-                            button4_0.BackColor = Color.Green;
-                            button5_0.BackColor = Color.Green;
-
-                            break;
-                        case "letteraVerdeAt1":
-                            button0_1.BackColor = Color.Green;
-                            button1_1.BackColor = Color.Green;
-                            button2_1.BackColor = Color.Green;
-                            button3_1.BackColor = Color.Green;
-                            button4_1.BackColor = Color.Green;
-                            button5_1.BackColor = Color.Green;
-                            break;
-                        case "letteraVerdeAt2":
-                            button0_2.BackColor = Color.Green;
-                            button1_2.BackColor = Color.Green;
-                            button2_2.BackColor = Color.Green;
-                            button3_2.BackColor = Color.Green;
-                            button4_2.BackColor = Color.Green;
-                            button5_2.BackColor = Color.Green;
-                            break;
-                        case "letteraVerdeAt3":
-                            button0_3.BackColor = Color.Green;
-                            button1_3.BackColor = Color.Green;
-                            button2_3.BackColor = Color.Green;
-                            button3_3.BackColor = Color.Green;
-                            button4_3.BackColor = Color.Green;
-                            button5_3.BackColor = Color.Green;
-                            break;
-                        case "letteraVerdeAt4":
-                            button0_4.BackColor = Color.Green;
-                            button1_4.BackColor = Color.Green;
-                            button2_4.BackColor = Color.Green;
-                            button3_4.BackColor = Color.Green;
-                            button4_4.BackColor = Color.Green;
-                            button5_4.BackColor = Color.Green;
-                            break;
-                        default:
-                            break;
+                        if(bottone.Riga==numeroRiga & bottone.Colonna == 0)
+                        {
+                            bottone.BackColor = Color.Green;
+                            ricerca.AggiungiLetteraTrovataV(bottone.Text[0], bottone.Colonna);
+                        }
+                    }
+                    if (cB.Checked & cB.Name.Equals("letteraVerdeAt1"))
+                    {
+                        if (bottone.Riga == numeroRiga & bottone.Colonna == 1)
+                        {
+                            bottone.BackColor = Color.Green;
+                            ricerca.AggiungiLetteraTrovataV(bottone.Text[0], bottone.Colonna);
+                            //TODO RICERCA VERDE
+                        }
+                    }
+                    if (cB.Checked & cB.Name.Equals("letteraVerdeAt2"))
+                    {
+                        if (bottone.Riga == numeroRiga & bottone.Colonna == 2)
+                        {
+                            bottone.BackColor = Color.Green;
+                            ricerca.AggiungiLetteraTrovataV(bottone.Text[0], bottone.Colonna);
+                            //TODO RICERCA VERDE
+                        }
+                    }
+                    if (cB.Checked & cB.Name.Equals("letteraVerdeAt3"))
+                    {
+                        if (bottone.Riga == numeroRiga & bottone.Colonna == 3)
+                        {
+                            bottone.BackColor = Color.Green;
+                            ricerca.AggiungiLetteraTrovataV(bottone.Text[0], bottone.Colonna);
+                            //TODO RICERCA VERDE
+                        }
+                    }
+                    if (cB.Checked & cB.Name.Equals("letteraVerdeAt4"))
+                    {
+                        if (bottone.Riga == numeroRiga & bottone.Colonna == 4)
+                        {
+                            bottone.BackColor = Color.Green;
+                            ricerca.AggiungiLetteraTrovataV(bottone.Text[0], bottone.Colonna);
+                            //TODO RICERCA VERDE
+                        }
                     }
                 }
-                else
-                {
-                    cB.BackColor = Color.Red;
-                }
             }
+
         }
 
         private void Avanti_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ColoreVerde(object sender, EventArgs e)
-        {
-            if (sender is Button b)
+            foreach (var button in this.Controls.OfType<Bottone>())
             {
-
-                switch (numeroRiga)
+                if (button.Riga == numeroRiga)
                 {
-                    case 0:
-                        int pos = (int)b.Name[8];
-                        listBox1.Items.Add(b.Name[8]);
-                        //ricerca.AggiungiLetteraTrovataV(b.Text[0], pos);
-                        break;
-                    case 1:
-                        break;
-                    case 2:
-                        break;
-                    case 3:
-                        break;
-                    case 4:
-                        break;
-                    case 5:
-                        break;
-
-                    default:
-                        break;
+                    if (button.BackColor == Color.DarkGray)
+                    {
+                        ricerca.AggiungiLetteraNon(button.Text[0]);
+                    }
                 }
             }
+            ricerca.Ricerca();
+            listBox1.Items.Clear();
+            listBox1.Items.Add("CIAO");
+            
+            foreach (var item in ricerca.parolePossibili)
+            {
+                listBox1.Items.Add(item.ParolaChiave);
+            }
+            numeroRiga++;
+        }
+
+
+        private void ClickBottone(object sender, EventArgs e)
+        {
+            if (sender is Bottone b)
+            {
+                if (b.BackColor != Color.Orange &b.Riga==numeroRiga)
+                {
+                    b.BackColor = Color.Orange;
+                    ricerca.AggiungiLetteraTrovataG(b.Text[0], b.Colonna);
+                }
+                
+            }
+        }
+
+        private void Reset_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
         }
     }
 }
